@@ -15,6 +15,6 @@ New-AzureRmResourceGroup -Name DotNetApps -Location "Central US"
 #Deploying web app template to azure using template
 
 New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName DotNetApps `
-  -TemplateFile "C:\Program Files (x86)\Jenkins\workspace\jenkinsgrptemplate\jenkinsgrp\WebSite.json" `
-  -TemplateParameterFile "C:\Program Files (x86)\Jenkins\workspace\jenkinsgrptemplate\jenkinsgrp\WebSite.parameters.json"
+  -TemplateFile "C:\Program Files (x86)\Jenkins\workspace\Template_Pipeline\DotNetApp15\Template_Pipeline\WebSite.json" `
+  -TemplateParameterFile "C:\Program Files (x86)\Jenkins\workspace\Template_Pipeline\DotNetApp15\Template_Pipeline\WebSite.parameters.json"
 
