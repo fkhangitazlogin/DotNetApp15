@@ -30,13 +30,5 @@
     <Content Include="WebSite.json" />
     <Content Include="WebSite.parameters.json" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DotNetAppV15\DotNetAppV15.csproj">
-      <Targets>
-      </Targets>
-      <AdditionalProperties>WebPublishMethod=Package;DeployOnBuild=true;Configuration=Release;PublishProfile=Default;DesktopBuildPackageLocation=..\Template_Pipeline\$(ProjectReferencesOutputPath)\DotNetAppV15\package.zip</AdditionalProperties>
-      <IncludeFilePath>$(ProjectReferencesOutputPath)\DotNetAppV15\package.zip</IncludeFilePath>
-    </ProjectReference>
-  </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
